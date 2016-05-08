@@ -1,0 +1,49 @@
+*{
+}
+body{
+	background-color: lightgray;
+	height: 100%;
+}
+.add, .cancel {
+	height: 1.5em;
+	/*display: inline-block;*/
+	margin-left: .1em;
+	margin-bottom: -.5em;
+}
+.add, .cancel:hover {
+	cursor: pointer;
+}
+.entry{
+	display: inline-block;
+}
+
+.common, .textarea {
+	float: left;
+}
+
+.slisth {
+	margin-top: 3em;
+	text-align: center;
+}
+.shoppingList {
+	background-image: url('../images/chalkboard.jpg');
+	background-size: 30em 40em;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	float: right;
+	/*border: 1em double black;*/
+	height: 40em;
+	width: 30em;
+	/*padding: .5em;*/
+	/*text-indent: 1em;*/
+	overflow: scroll;
+	margin-top: -6em;
+	color: #fff;
+	font-family: 'Finger Paint', cursive;
+
+}
+
+.shoppingList form {
+	display: inline-block;
+}

@@ -5,15 +5,67 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+	<header>
+		<h1> Shopping List</h1>
+	</header>
+
 	<div class="textArea">
+
+				<!-- text area -->
+				<form class="entry">
+					<input type="text" name="item" placeholder="Enter List Item">
+				</form>
+
+				<!-- add button -->
+				<img class="add" src="images/add.svg.png" alt="add">
+				<!-- cancel button -->
+				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
 	</div>
 
 	<div class="common">
+		<h4> Common Items </h4>
+		
+		<p> Toilet Paper 
+		<!-- add button -->
+				<img class="add" src="images/add.svg.png" alt="add">
+				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
+		</p>
+
+		<p> Paper Towels
+		<!-- add button -->
+				<img class="add" src="images/add.svg.png" alt="add">
+				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
+		</p>
+
+		<p> Dish Soap
+		<!-- add button -->
+				<img class="add" src="images/add.svg.png" alt="add">
+				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
+		</p>
+
+
 	</div>
 
 	<div class="shoppingList">
+		<h4 class="slisth"> List</h4>
+		<form>
+			<p>
+				<ul>
+					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="chicken" checked="checked"> Chicken </li>
+					<!-- <br /> -->
+					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="steak" checked="checked"> Steak </li>
+					<!-- <br /> -->
+					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="mint" > Mint </li>
+					<!-- <br /> -->
+					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="toiletpaper" > Toilet Paper </li>
+				</ul>
+			</p>
+		</form>
+
 	</div>
 
 
