@@ -16,13 +16,13 @@ body{
 	margin-top: -1.3em;
 	border: .1em solid teal;
 }
-.add, .cancel {
+.add, .Cadd, .cancel {
 	height: 1.5em;
 	/*display: inline-block;*/
 	margin-left: .1em;
 	margin-bottom: -.5em;
 }
-.add, .delete, .cancel:hover {
+.add, .delete, .cancel, .Cadd, .fa:hover {
 	cursor: pointer;
 }
 .delete {
@@ -38,6 +38,9 @@ body{
 .common, .textarea {
 	float: left;
 
+}
+li {
+	list-style-type: none;
 }
 
 .slisth {
@@ -67,6 +70,21 @@ body{
 	display: inline-block;
 	font-family: 'Finger Paint', cursive;
 }
+
+div.listeditem {
+	font-family: 'Finger Paint', cursive;
+}
+
+.checked {
+	text-decoration: line-through;
+	color: lightgray;
+	-moz-text-decoration-style: solid;
+	-moz-text-decoration-color: red;
+}
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: pointer; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399ff; }
 
 @media only screen and (max-width: 600px) {
 	.shoppingList {

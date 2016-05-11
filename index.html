@@ -18,13 +18,14 @@
 
 				<!-- text area -->
 				<form class="entry">
-					<input type="text" name="item" placeholder="Enter List Item">
+					<input id="item" type="text" name="item" placeholder="Enter List Item">
 				</form>
 
 				<!-- add button -->
-				<img class="add" src="images/add.svg.png" alt="add">
+				<img id="Iadd" class="add" src="images/add.svg.png" alt="add">
 				<!-- cancel button -->
-				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
+				<i class="fa fa-arrow-down" aria-hidden="true"></i>
+
 	</div>
 
 	<div class="common">
@@ -32,19 +33,19 @@
 		
 		<p> Toilet Paper 
 		<!-- add button -->
-				<img class="add" src="images/add.svg.png" alt="add">
+				<img class="Cadd" src="images/add.svg.png" alt="add">
 				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
 		</p>
 
 		<p> Paper Towels
 		<!-- add button -->
-				<img class="add" src="images/add.svg.png" alt="add">
+				<img class="Cadd" src="images/add.svg.png" alt="add">
 				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
 		</p>
 
 		<p> Dish Soap
 		<!-- add button -->
-				<img class="add" src="images/add.svg.png" alt="add">
+				<img class="Cadd" src="images/add.svg.png" alt="add">
 				<img class="cancel" src="images/cancel.svg.png" alt="cancel.svg.png">
 		</p>
 
@@ -56,20 +57,7 @@
 		<form>
 			<p>
 				<ul>
-					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="chicken" checked="checked"> Chicken
-					<img class="delete" src="images/close-icon.png" alt="cancel.svg.png">
-					</li>
-					<!-- <br /> -->
-					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="steak" checked="checked"> Steak 
-					<img class="delete" src="images/close-icon.png" alt="cancel.svg.png">
-					</li>
-					<!-- <br /> -->
-					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="mint" > Mint <img class="delete" src="images/close-icon.png" alt="cancel.svg.png">
-					 </li>
-					<!-- <br /> -->
-					<li style="list-style-type: none;"><input type="checkbox" name="listItem" value="toiletpaper" > Toilet Paper 
-					<img class="delete" src="images/close-icon.png" alt="cancel.svg.png">
-					</li>
+					
 				</ul>
 			</p>
 		</form>
@@ -77,7 +65,9 @@
 	</div>
 </div>
 
-
-
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://designshack.net/tutorialexamples/html5-autocomplete-suggestions/js/jquery.autocomplete.min.js"></script>
+	<script src="https://use.fontawesome.com/ced1a2be28.js"></script>
 </body>
 </html>
