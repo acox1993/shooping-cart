@@ -1,8 +1,20 @@
 *{
+	/*font-family: 'Slabo 27px', serif;*/
+	/*font-family: 'Finger Paint', cursive;*/
+
 }
 body{
-	background-color: lightgray;
-	height: 100%;
+	background-image: url("../images/blue-cart.jpg");
+	height: 48em;
+	font-family: 'Slabo 27px', serif;
+}
+.bodyMain {
+	width: 45em;
+	height: 47.7em;
+	margin: 0 auto;
+	background-color: darkturquoise;
+	margin-top: -1.3em;
+	border: .1em solid teal;
 }
 .add, .cancel {
 	height: 1.5em;
@@ -10,8 +22,14 @@ body{
 	margin-left: .1em;
 	margin-bottom: -.5em;
 }
-.add, .cancel:hover {
+.add, .delete, .cancel:hover {
 	cursor: pointer;
+}
+.delete {
+	height: 1.3em;
+	/*display: inline-block;*/
+	margin-left: .1em;
+	margin-bottom: -.3em;
 }
 .entry{
 	display: inline-block;
@@ -19,6 +37,7 @@ body{
 
 .common, .textarea {
 	float: left;
+
 }
 
 .slisth {
@@ -27,18 +46,18 @@ body{
 }
 .shoppingList {
 	background-image: url('../images/chalkboard.jpg');
-	background-size: 30em 40em;
+	background-size: 30em 47.8em;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: inline-block;
 	float: right;
 	/*border: 1em double black;*/
-	height: 40em;
+	height: 48em;
 	width: 30em;
 	/*padding: .5em;*/
 	/*text-indent: 1em;*/
 	overflow: scroll;
-	margin-top: -6em;
+	margin-top: -7.1em;
 	color: #fff;
 	font-family: 'Finger Paint', cursive;
 
@@ -46,4 +65,54 @@ body{
 
 .shoppingList form {
 	display: inline-block;
+	font-family: 'Finger Paint', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+	.shoppingList {
+		background-size: 20em 41em;
+		height: 42em;
+		width: 20em;
+	}	
+	.bodyMain {
+		width: 35em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.shoppingList {
+		background-size: 25em 30em;
+		height: 30em;
+		width: 25em;
+		margin-top: 0;
+		float: left;
+
+	}
+
+	.bodyMain {
+		width: 25em;
+	}
+
+	.textArea, .common, .shoppingList {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.shoppingList {
+		background-size: 19.8em 30em;
+		height: 30em;
+		width: 19.8em;
+		margin-top: 0;
+		float: left;
+
+	}
+
+	.bodyMain {
+		width: 19.8em;
+	}
+
+	.textArea, .common, .shoppingList {
+		display: block;
+	}
 }
