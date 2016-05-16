@@ -18,18 +18,52 @@ $(document).ready(function() {
 	});
 		 $('.fa-arrow-down').click(function() {
     		var toAdd = $("input[name=item]").val();
-    		$('.common').append("<p>" + toAdd + "<img class='Cadd' src='images/add.svg.png' alt='add'><img class='cancel' src='images/cancel.svg.png' alt='cancel.svg.png'></p>");
-    		// $('img.Cadd').click(function() {
-      //   	// $(this).parent().prepend("<li><div class='listeditem'> <i class='fa fa-square-o'  aria-hidden='true'> </i> " + Toilet Paper + "<img class='delete' alt='cancel.svg.png' src='images/close-icon.png'> </div></li>");
+    		$('.common').append("<p><span>" + toAdd + "</span><img class='Cadd' src='images/add.svg.png' alt='add'><img class='cancel' src='images/cancel.svg.png' alt='cancel.svg.png'></p>");
+    		$('img.Cadd').click(function(){
+        var commonItem = $(this).parent().children("span").text();
+            $('ul').prepend("<li><div class='listeditem'> <i class='fa fa-square-o'  aria-hidden='true'> </i> " + commonItem + " <img class='delete' alt='cancel.svg.png' src='images/close-icon.png'> </div></li>");
+            $('img.delete').click(function() {
+            $(this).parent().remove();
+        });
+        $('.listeditem').click(function() {
+            if ($(this).children('i').hasClass('fa-square-o')) {
+                $(this).children('i').removeClass("fa-square-o").addClass("fa-check-square-o")
+                $(this).addClass("checked")
+            }
+            else {
+                $(this).children('i').removeClass("fa-check-square-o").addClass("fa-square-o")
+                $(this).removeClass("checked")
+            };
+        });
 
-   			//  });
+   		
     		$('img.cancel').click(function() {
     			$(this).parent().remove();
     		});
     	});
+        });
     $('img.cancel').click(function() {
     			$(this).parent().remove();
     		});
+
+    $('img.Cadd').click(function(){
+        var commonItem = $(this).parent().children("span").text();
+            $('ul').prepend("<li><div class='listeditem'> <i class='fa fa-square-o'  aria-hidden='true'> </i> " + commonItem + " <img class='delete' alt='cancel.svg.png' src='images/close-icon.png'> </div></li>");
+            $('img.delete').click(function() {
+            $(this).parent().remove();
+        });
+        $('.listeditem').click(function() {
+            if ($(this).children('i').hasClass('fa-square-o')) {
+                $(this).children('i').removeClass("fa-square-o").addClass("fa-check-square-o")
+                $(this).addClass("checked")
+            }
+            else {
+                $(this).children('i').removeClass("fa-check-square-o").addClass("fa-square-o")
+                $(this).removeClass("checked")
+            };
+        });
+
+    })
 	
 	// $('.cancel').click(function() {
 	// 	$('#item').hide()
